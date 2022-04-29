@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "GRIT STRENGTH",
+        "price": "300",
+        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "GRIT STRENGTH",
+        "price": "300",
+        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+    },
+    {
+        "_id": 3,
+        "name": "GRIT STRENGTH",
+        "price": "300",
+        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+    },
+    {
+        "_id": 4,
+        "name": "GRIT STRENGTH",
+        "price": "300",
+        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+    },
+    {
+        "_id": 5,
+        "name": "GRIT STRENGTH",
+        "price": "300",
+        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+    },
+    {
+        "_id": 6,
+        "name": "GRIT STRENGTH",
+        "price": "300",
+        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+    }
+]

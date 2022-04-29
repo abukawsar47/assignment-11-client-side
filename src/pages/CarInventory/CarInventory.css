@@ -1,0 +1,14 @@
+.car-detail {
+    background-image: url(../../images/banner/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgb(13 13 16 / 60%);
+}
+
+.detail-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
