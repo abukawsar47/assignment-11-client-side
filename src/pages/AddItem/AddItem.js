@@ -4,7 +4,21 @@ import { useForm } from "react-hook-form";
 const AddItem = () => {
 
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data)
+        const url = `http://localhost:5000/car`
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+            })
+    };
 
     return (
         <div className='bg-img-container'>
@@ -17,10 +31,10 @@ const AddItem = () => {
                                 <input className='mb-4 p-2' placeholder='Name' {...register("name", { required: true, maxLength: 30 })} />
                                 <input className='mb-3 p-2' placeholder='Price' type="number" {...register("price")} />
                                 <textarea className='mb-3 p-2' placeholder='Description' {...register("description")} />
-                                <input className='mb-3 p-2' placeholder='Quantity' type="number" {...register("Quantity")} />
+                                <input className='mb-3 p-2' placeholder='Quantity' type="number" {...register("quantity")} />
                                 <input className='mb-3 p-2' placeholder='Supplier' {...register("supplier")} />
                                 <input className='mb-3 p-2' placeholder='Photo URL' {...register("img")} />
-                                <input className='btn btn-danger' type="submit" />
+                                <input className='btn btn-danger' type="submit" value="Add Item" />
                             </form>
                         </div>
 
