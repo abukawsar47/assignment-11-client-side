@@ -66,7 +66,7 @@ const Login = () => {
         }
     }
     return (
-        <div className='login'>
+        <div className='bg-img-container'>
             <div className='container py-5'>
                 <div className='from-container mx-auto '>
                     <img className='w-50 d-block mx-auto mb-4' src={logo} alt="" />

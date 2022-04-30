@@ -9,7 +9,8 @@ import NotFound from "./pages/Shared/NotFound/NotFound";
 import Blogs from './pages/Blogs/Blogs';
 import CarInventory from './pages/CarInventory/CarInventory';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
-import Checkout from './pages/Checkout/Checkout';
+import Update from './pages/Update/Update';
+import AddItem from './pages/AddItem/AddItem';
 
 function App() {
   return (
@@ -18,10 +19,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path='/inventory/:inventoryId' element={<CarInventory></CarInventory>}></Route>
-        <Route path='/checkout' element={
+        <Route path='/car/:carId' element={<CarInventory></CarInventory>}></Route>
+        <Route path='/update' element={
           <PrivateRoute>
-            <Checkout></Checkout>
+            <Update></Update>
+          </PrivateRoute>
+        }></Route>
+        <Route path='/add-item' element={
+          <PrivateRoute>
+            <AddItem></AddItem>
           </PrivateRoute>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>

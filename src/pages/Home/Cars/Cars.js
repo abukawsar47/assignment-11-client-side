@@ -6,7 +6,7 @@ const Cars = () => {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch('cars.json')
+        fetch('http://localhost:5000/car')
             .then(res => res.json())
             .then(data => setCars(data));
     }, [])
@@ -14,7 +14,7 @@ const Cars = () => {
     return (
         <div id="cars" className='container my-5'>
             <div className="row">
-                <h1 className='text-danger text-center '>Car Inventory</h1>
+                <h1 className='text-danger text-center'>Car Inventory</h1>
                 <span className='text-center mb-5'>Check out our recent cars</span>
                 <div className="cars-container">
                     {

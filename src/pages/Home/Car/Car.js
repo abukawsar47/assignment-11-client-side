@@ -6,8 +6,8 @@ const Car = ({ car }) => {
     const { _id, name, img, description, price, quantity, supplier } = car;
     const navigate = useNavigate();
 
-    const navigateToCarDetail = _id => {
-        navigate(`/inventory/${_id}`);
+    const navigateToCarDetail = id => {
+        navigate(`/car/${id}`);
     }
     return (
         <div className='car'>

@@ -1,12 +1,12 @@
 import React from 'react';
-import './Checkout.css'
+import './Update.css'
 import logo from '../../images/logo-light.png'
 
-const Checkout = () => {
+const Update = () => {
     return (
-        <div className='checkout'>
+        <div className='bg-img-container'>
             <div className="container">
-                <div className='checkout-msg '>
+                <div className='inner-content'>
                     <img className='mx-auto mb-4 d-block' src={logo} alt="" />
                     <h1 className='text-center text-white mb-4'>Congratulation!</h1>
                     <h2 className='text-center text-white '>You have successfully booked our training</h2>
@@ -16,4 +16,4 @@ const Checkout = () => {
     );
 };
 
-export default Checkout;
+export default Update;

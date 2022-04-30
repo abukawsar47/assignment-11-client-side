@@ -43,7 +43,7 @@ const Register = () => {
     }
 
     return (
-        <div className="login">
+        <div className="bg-img-container">
             <div className="container py-5">
                 <div className='from-container register-form mx-auto'>
                     <img className='w-50 mx-auto mb-4 d-block' src={logo} alt="" />
