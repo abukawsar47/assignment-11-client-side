@@ -5,7 +5,7 @@ const AddItem = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/car`
+        const url = `https://enigmatic-sea-44652.herokuapp.com/car`
         fetch(url, {
             method: 'POST',
             headers: {

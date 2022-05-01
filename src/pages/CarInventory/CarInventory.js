@@ -7,7 +7,7 @@ const CarInventory = () => {
     const [car, setCar] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/car/${carId}`;
+        const url = `https://enigmatic-sea-44652.herokuapp.com/car/${carId}`;
 
         fetch(url)
             .then(res => res.json())
