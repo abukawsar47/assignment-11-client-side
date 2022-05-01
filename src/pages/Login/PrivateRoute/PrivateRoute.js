@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
 
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
-    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+    const [sendEmailVerification] = useSendEmailVerification(auth);
 
     if (loading) {
         return <Loading></Loading>
@@ -22,9 +22,9 @@ const PrivateRoute = ({ children }) => {
 
     if (user.providerData[0]?.providerId === 'password' && !user.emailVerified) {
         return <div className='bg-img-container'>
-            <div className='inner-content text-center mt-5'>
-                <h3 className='text-danger' > Your Email is not verified!!</h3>
-                <h3 className='text-success'> Please Verify your email address</h3>
+            <div className='inner-content text-center'>
+                <h3 className='text-white mb-2' > Your Email is not verified!!</h3>
+                <h3 className='text-white mb-3'> Please Verify your email address.</h3>
                 <button
                     className='btn btn-danger'
                     onClick={async () => {
@@ -37,6 +37,7 @@ const PrivateRoute = ({ children }) => {
             </div >
             <ToastContainer></ToastContainer>
         </div >
+
     }
 
     return children;

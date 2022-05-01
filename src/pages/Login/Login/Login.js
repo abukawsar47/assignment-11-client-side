@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -11,7 +11,6 @@ import Loading from '../../Shared/Loading/Loading';
 import logo from '../../../images/logo-light.png'
 
 const Login = () => {
-    const [users, setUsers] = useState();
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
