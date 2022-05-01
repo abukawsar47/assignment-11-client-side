@@ -18,7 +18,7 @@ const Cars = () => {
                 <span className='text-center mb-5'>Check out our recent cars</span>
                 <div className="cars-container">
                     {
-                        cars.map(car => <Car
+                        cars.slice(0, 6).map(car => <Car
                             key={car._id}
                             car={car}
                         >

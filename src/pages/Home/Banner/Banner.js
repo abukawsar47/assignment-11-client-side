@@ -1,9 +1,9 @@
 import React from 'react';
-import banner from '../../../images/banner/banner.jpg';
+import banner from '../../../images/banner/banner-main.jpg';
 
 const Banner = () => {
     return (
-        <div>
+        <div className='position-relative'>
             <img className='img-fluid' src={banner} alt="" />
         </div>
     );

@@ -11,6 +11,7 @@ import CarInventory from './pages/CarInventory/CarInventory';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import Update from './pages/Update/Update';
 import AddItem from './pages/AddItem/AddItem';
+import ManageItems from './pages/ManageItems/ManageItems';
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
         <Route path='/add-item' element={
           <PrivateRoute>
             <AddItem></AddItem>
+          </PrivateRoute>
+        }></Route>
+        <Route path='/manage-items' element={
+          <PrivateRoute>
+            <ManageItems></ManageItems>
           </PrivateRoute>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
