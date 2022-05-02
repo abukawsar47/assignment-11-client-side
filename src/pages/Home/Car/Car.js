@@ -11,17 +11,6 @@ const Car = ({ car }) => {
     }
     return (
         <div className='car'>
-            {/*  <img className='car-img' src={img} alt="" />
-            <div className='p-4 card-body'>
-                <h2>{name}</h2> car card
-                <p className='text-danger'>Price: <strong>${price}</strong></p>
-                <p><small>{description}</small></p>
-                <p>Quantity: {quantity}</p>
-                <p>Supplier: {supplier}</p>
-                <div className="card-footer bg-white border-0">
-                    <button onClick={() => navigateToCarDetail(_id)} className='btn btn-danger'>Update</button>
-                </div>
-            </div> */}
             <div className="card-group">
                 <div className="card">
                     <img src={img} className="card-img-top car-img" alt="..." />

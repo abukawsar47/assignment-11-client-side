@@ -23,7 +23,7 @@ const ManageItems = () => {
     }
 
     return (
-        <div style={{ height: '100vh' }} className='my-5'>
+        <div className='my-5'>
             <div className='container'>
                 <h2 className='text-center mb-4'>Manage your items</h2>
                 <div className="row text-white">

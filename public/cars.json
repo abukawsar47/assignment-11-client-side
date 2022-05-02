@@ -1,56 +1,90 @@
 [
     {
-        "_id": 1,
-        "name": "GRIT STRENGTH",
-        "price": "300",
-        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
-        "quantity": "30",
-        "supplier": "BMW",
-        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+        "name": "Toyota Tacoma",
+        "price": "6546",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "10",
+        "supplier": "Toyota",
+        "img": "https://i.ibb.co/1T3xKT0/1.jpg"
     },
     {
-        "_id": 2,
-        "name": "GRIT STRENGTH",
-        "price": "300",
-        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
-        "quantity": "30",
-        "supplier": "BMW",
-        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+        "name": "Chevrolet Trailblazer 21",
+        "price": "2454",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "22",
+        "supplier": "Trailblazer",
+        "img": "https://i.ibb.co/rFMqC6c/2.jpg"
     },
     {
-        "_id": 3,
-        "name": "GRIT STRENGTH",
-        "price": "300",
-        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
-        "quantity": "30",
-        "supplier": "BMW",
-        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+        "name": "Ford Explorer",
+        "price": "3456",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "11",
+        "supplier": "Ford",
+        "img": "https://i.ibb.co/zSTm5f5/3.jpg"
     },
     {
-        "_id": 4,
-        "name": "GRIT STRENGTH",
-        "price": "300",
-        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
-        "quantity": "30",
-        "supplier": "BMW",
-        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+        "name": "Lamborghini Urus 2021",
+        "price": "2545",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "14",
+        "supplier": "Urus",
+        "img": "https://i.ibb.co/WFN4nfM/4.jpg"
     },
     {
-        "_id": 5,
-        "name": "GRIT STRENGTH",
-        "price": "300",
-        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
-        "quantity": "30",
+        "name": "BMW X7 M50d",
+        "price": "6534",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "7",
         "supplier": "BMW",
-        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+        "img": "https://i.ibb.co/ry0cbb7/5.jpg"
     },
     {
-        "_id": 6,
-        "name": "GRIT STRENGTH",
+        "name": "Bentley Flying Spur",
+        "price": "5423",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "56",
+        "supplier": "Bentley",
+        "img": "https://i.ibb.co/Th9CyB9/6.jpg"
+    },
+    {
+        "name": "Chevrolet Suburban 2021",
+        "price": "5454",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "34",
+        "supplier": "Chevrolet",
+        "img": "https://i.ibb.co/1fKZBmT/7.jpg"
+    },
+    {
+        "name": "BMW M440i",
         "price": "300",
-        "description": "We have a heap of fun pieces of equipment to build down every inch of your body",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
         "quantity": "30",
         "supplier": "BMW",
-        "img": "https://i.ibb.co/6ntXD3R/05.jpg"
+        "img": "https://i.ibb.co/7g3qfCB/8.jpg"
+    },
+    {
+        "name": "Hyundai 2022 TUCSON",
+        "price": "300",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/VSVkTtY/9.jpg"
+    },
+    {
+        "name": "Chevrolet Trailblazer 21",
+        "price": "300",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/KbBM17Z/10.jpg"
+    },
+    {
+        "name": "Chevrolet Silverado HD ",
+        "price": "300",
+        "description": "Aesthetics and dynamics in a cutting-edge interpretation: the BMW 3 Series Touring impresses with consistently well-conceived design.",
+        "quantity": "30",
+        "supplier": "BMW",
+        "img": "https://i.ibb.co/BtRZ4gm/11.jpg"
     }
 ]

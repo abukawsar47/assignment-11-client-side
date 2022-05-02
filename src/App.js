@@ -12,6 +12,7 @@ import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import Update from './pages/Update/Update';
 import AddItem from './pages/AddItem/AddItem';
 import ManageItems from './pages/ManageItems/ManageItems';
+import MyItems from './pages/MyItems/MyItems';
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
         <Route path='/manage-items' element={
           <PrivateRoute>
             <ManageItems></ManageItems>
+          </PrivateRoute>
+        }></Route>
+        <Route path='/my-items' element={
+          <PrivateRoute>
+            <MyItems></MyItems>
           </PrivateRoute>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>

@@ -5,7 +5,10 @@ const AddItem = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `https://enigmatic-sea-44652.herokuapp.com/car`
+        if (!data.success) {
+
+        }
+        const url = `https://enigmatic-sea-44652.herokuapp.com/car`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -18,6 +21,7 @@ const AddItem = () => {
                 // console.log(result);
             })
     };
+
 
     return (
         <div className='bg-img-container'>
