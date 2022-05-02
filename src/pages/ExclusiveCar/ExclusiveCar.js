@@ -15,13 +15,13 @@ const ExclusiveCar = () => {
                 </div>
                 <div className="row align-items-center text-md-start  text-center">
                     <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="exc-featured-item mb-4">
+                        <div className="  mb-4">
                             <div className="content">
                                 <h5>SUPER FAST CAR</h5>
                                 <p>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.</p>
                             </div>
                         </div>
-                        <div className="exc-featured-item mb-4">
+                        <div className="  mb-4">
                             <div className="content">
                                 <h5>DEALERSHIP POINTS</h5>
                                 <p>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.</p>
@@ -29,18 +29,18 @@ const ExclusiveCar = () => {
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-4 d-none d-lg-block">
-                        <div className="exc-featured-img">
+                        <div className="">
                             <img src={exclusiveCar} alt="" />
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="exc-featured-item mb-4">
+                        <div className="  mb-4">
                             <div className="content">
                                 <h5>SUPER FAST CAR</h5>
                                 <p>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.</p>
                             </div>
                         </div>
-                        <div className="exc-featured-item mb-4">
+                        <div className="  mb-4">
                             <div className="content">
                                 <h5>DEALERSHIP POINTS</h5>
                                 <p>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.</p>

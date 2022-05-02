@@ -1,15 +1,28 @@
-import React from 'react';
-import './Update.css'
-import logo from '../../images/logo-light.png'
+import React, { useEffect, useState } from 'react';
+import Car from '../Home/Car/Car';
 
 const Update = () => {
+    const [cars, setCars] = useState([]);
+
+    useEffect(() => {
+        fetch('https://enigmatic-sea-44652.herokuapp.com/car')
+            .then(res => res.json())
+            .then(data => setCars(data));
+    }, [])
+
     return (
-        <div className='bg-img-container'>
-            <div className="container">
-                <div className='inner-content'>
-                    <img className='mx-auto mb-4 d-block' src={logo} alt="" />
-                    <h1 className='text-center text-white mb-4'>Congratulation!</h1>
-                    <h2 className='text-center text-white '>You have successfully booked our training</h2>
+        <div id="cars" className='container my-5'>
+            <div className="row">
+                <h1 className='text-danger text-center'>Car Inventory</h1>
+                <span className='text-center mb-5'>Check out our recent cars</span>
+                <div className="cars-container">
+                    {
+                        cars.map(car => <Car
+                            key={car._id}
+                            car={car}
+                        >
+                        </Car>)
+                    }
                 </div>
             </div>
         </div>

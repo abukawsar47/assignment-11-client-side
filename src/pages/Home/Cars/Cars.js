@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Car from '../Car/Car';
 import './Cars.css'
 
@@ -24,6 +25,9 @@ const Cars = () => {
                         >
                         </Car>)
                     }
+                </div>
+                <div className='mt-5 text-center' >
+                    <Link to={'/update'} className='btn btn-danger'>View All Cars</Link>
                 </div>
             </div>
         </div>
