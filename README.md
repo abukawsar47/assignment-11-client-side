@@ -2,7 +2,7 @@
 
 Car Dealer is the most enticing, creative, modern and versatile auto dealer premium REACT template suitable for any car dealer website, business or corporate websites.
 
-## Live link (Firebase) - https://assignment-10-ak47.web.app/
+## Live link (Firebase) - https://assignment-11-client-side.web.app/
 
 
 
@@ -31,15 +31,9 @@ Bootstrap 5 framework is being developed, it is fully responsive on any device. 
 * If you have any questions Contact us We’ll be glad to help you!
 * If you need clarification? or any suggestion Feel free to contact us.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
