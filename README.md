@@ -1,33 +1,39 @@
-# Getting Started with Create React App
+# Car Dealer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Car Dealer is the most enticing, creative, modern and versatile auto dealer premium REACT template suitable for any car dealer website, business or corporate websites.
 
-## Available Scripts
+## Live link (Firebase) - https://assignment-11-client-side.web.app/
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Website Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Car Dealer is the most enticing, creative, modern, and versatile auto dealer premium React template suitable for any car dealer website, business or corporate website. The template is specifically designed for automotive dealers, car resellers, car service stations, mechanic workshops and auto motor retailers.
 
-### `npm test`
+Bootstrap 5 framework is being developed, it is fully responsive on any device. It comes with a choice from different color and layout options. The template also includes comment codes for each section of the template so you can easily customize your templates to suit your needs. Unique design, impressive sliders, and innovative website-building tools work seamlessly to grow your business online.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Elegant and clean home page.
+* Responsive and sticky navigator.
+* General-purpose pages like Blogs, Car Inventory and much more
+* Bootstrap 5 framework, React library etc. have been used.
+* Added many elements and widgets.
+* Valid JSX and CSS3.
+* Easy to use and well commented code as well as reusable code.
+* Extensive documentation.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### NOTES
+
+* This is a pure React template, not a WordPress or any other CMS theme.
+* Images used in the demo are not included in the Downloaded Package. However, you may purchase it separately. All credits are included in the documentation.
+* If you have any questions Contact us We’ll be glad to help you!
+* If you need clarification? or any suggestion Feel free to contact us.
+
+
+
+
 
 ### `npm run eject`
 
