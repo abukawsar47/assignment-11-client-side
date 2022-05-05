@@ -1,12 +1,12 @@
 
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import axiosPrivate from '../../api/axiosPrivate';
 import auth from '../../firebase.init';
 
 const MyItems = () => {
@@ -17,13 +17,10 @@ const MyItems = () => {
     useEffect(() => {
 
         const getMyItems = async () => {
-            const url = `https://enigmatic-sea-44652.herokuapp.com/car`;
+            const email = user.email;
+            const url = `https://enigmatic-sea-44652.herokuapp.com/car?email=${email}`;
             try {
-                const { data } = await axios.get(url, {
-                    headers: {
-                        authorization: `Bearer ${localStorage.getItem('accessToken')}`
-                    }
-                });
+                const { data } = await axiosPrivate.get(url);
                 setCars(data);
             }
             catch (error) {
@@ -35,7 +32,7 @@ const MyItems = () => {
             }
         }
         getMyItems();
-    }, []);
+    }, [user]);
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
