@@ -1,23 +1,7 @@
-/* import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import './CarInventory.css';
-
-const CarInventory = () => {
-    const { carId } = useParams();
-    const [car, setCar] = useState({});
-
-    useEffect(() => {
-        const url = `https://enigmatic-sea-44652.herokuapp.com/car/${carId}`;
-
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setCar(data));
-    }, [carId])
- */
 
 
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';//useNavigate,
+import { useParams } from 'react-router-dom';
 
 const CarInventory = () => {
     const { carId } = useParams();
@@ -29,10 +13,7 @@ const CarInventory = () => {
             .then(res => res.json())
             .then(data => setCar(data))
     }, [carId])
-    /*     const navigate = useNavigate();
-        const navigateToInventory = () => {
-            navigate(`/car/${id}`);
-        } */
+
 
     const handleCarDeliveredQuantity = () => {
         let { name, _id, description, price, img, quantity, supplier } = car;
@@ -42,7 +23,6 @@ const CarInventory = () => {
             const updateCar = { name, _id, description, price, img, quantity, supplier };
 
             const url = `https://enigmatic-sea-44652.herokuapp.com/car/${_id}`;
-            // console.log(url);
             fetch(url, {
                 method: 'PUT',
                 headers: {

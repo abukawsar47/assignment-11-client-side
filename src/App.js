@@ -38,7 +38,7 @@ function App() {
             <ManageItems></ManageItems>
           </PrivateRoute>
         }></Route>
-        <Route path='/my-items' element={
+        <Route path='/myItems' element={
           <PrivateRoute>
             <MyItems></MyItems>
           </PrivateRoute>

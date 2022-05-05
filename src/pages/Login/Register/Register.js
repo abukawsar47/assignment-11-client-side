@@ -45,7 +45,7 @@ const Register = () => {
     return (
         <div className="bg-img-container">
             <div className="container py-5">
-                <div className='from-container register-form mx-auto'>
+                <div className='from-container register-form mx-auto bg-dark'>
                     <img className='w-50 mx-auto mb-4 d-block' src={logo} alt="" />
                     <h2 className='text-danger text-center mb-4'>Please Register</h2>
                     <form onSubmit={handleRegister}>

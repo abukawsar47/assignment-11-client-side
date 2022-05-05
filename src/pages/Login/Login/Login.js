@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 import Loading from '../../Shared/Loading/Loading';
 import logo from '../../../images/logo-light.png'
+import axios from 'axios';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -42,12 +43,14 @@ const Login = () => {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('https://enigmatic-sea-44652.herokuapp.com/login', { email })
+        localStorage.setItem('accessToken', data.accessToken);
     }
 
     const navigateRegister = event => {
@@ -67,7 +70,7 @@ const Login = () => {
     return (
         <div className='bg-img-container'>
             <div className='container py-5'>
-                <div className='from-container mx-auto '>
+                <div className='from-container mx-auto bg-dark'>
                     <img className='w-50 d-block mx-auto mb-4' src={logo} alt="" />
                     <h2 className='text-white text-center mb-4'>Please Login</h2>
                     <Form onSubmit={handleSubmit}>
