@@ -28,6 +28,8 @@ const Cars = () => {
                 </div>
                 <div className='mt-5 text-center' >
                     <Link to={'/update'} className='btn btn-danger'>View All Cars</Link>
+                    <Link to={'/manage-items'} className='btn btn-danger mx-2'>Manage Items</Link>
+                    <Link to={'/add-item'} className='btn btn-danger'>Add Item</Link>
                 </div>
             </div>
         </div>

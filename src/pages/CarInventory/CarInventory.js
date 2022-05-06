@@ -8,7 +8,6 @@ const CarInventory = () => {
     const [car, setCar] = useState({});
     useEffect(() => {
         const url = `https://enigmatic-sea-44652.herokuapp.com/car/${carId}`;
-        console.log(url);
         fetch(url)
             .then(res => res.json())
             .then(data => setCar(data))
@@ -17,7 +16,6 @@ const CarInventory = () => {
 
     const handleCarDeliveredQuantity = () => {
         let { name, _id, description, price, img, quantity, supplier } = car;
-        console.log(_id);
         if (quantity > 0) {
             quantity = quantity - 1;
             const updateCar = { name, _id, description, price, img, quantity, supplier };

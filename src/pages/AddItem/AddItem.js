@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const AddItem = () => {
@@ -35,6 +36,11 @@ const AddItem = () => {
                 <div className="row justify-content-center">
                     <div className="col-md-8 col-sm-12">
                         <div className="border border-white border-2 rounded p-4 my-5 text-white bg-dark">
+                            <div className='my-2 text-center' >
+                                <Link to={'/update'} className='btn btn-danger '>View All Cars</Link>
+                                <Link to={'/manage-items'} className='btn btn-danger mx-2'>Manage Items</Link>
+                                <Link to={'/myItems'} className='btn btn-danger'>My Items</Link>
+                            </div>
                             <h2 className='text-center mb-4'>Please Add an Item</h2>
                             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                                 <label className='mb-2'>Product Name</label>

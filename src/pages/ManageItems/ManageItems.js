@@ -2,6 +2,7 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useCars from '../../hooks/useCars';
 
 const ManageItems = () => {
@@ -26,6 +27,11 @@ const ManageItems = () => {
         <div className='my-5'>
             <div className='container'>
                 <h2 className='text-center mb-4'>Manage your items</h2>
+                <div className='mb-4 text-center' >
+                    <Link to={'/update'} className='btn btn-danger '>View All Cars</Link>
+                    <Link to={'/add-item'} className='btn btn-danger mx-2'>Add Item</Link>
+                    <Link to={'/myItems'} className='btn btn-danger'>My Items</Link>
+                </div>
                 <div className="row text-white">
                     <div className="col-12">
                         <div className=''>

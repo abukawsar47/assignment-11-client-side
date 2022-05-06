@@ -5,7 +5,7 @@ import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axiosPrivate from '../../api/axiosPrivate';
 import auth from '../../firebase.init';
 
@@ -37,7 +37,6 @@ const MyItems = () => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
             const url = `https://enigmatic-sea-44652.herokuapp.com/car/${id}`;
-            console.log(url);
             fetch(url, {
                 method: 'DELETE'
             })
@@ -54,6 +53,11 @@ const MyItems = () => {
         <div className='my-5 min-vh-100'>
             <div className='container'>
                 <h2 className='text-center mb-4'>My Items</h2>
+                <div className='mb-4 text-center' >
+                    <Link to={'/update'} className='btn btn-danger'>View All Cars</Link>
+                    <Link to={'/manage-items'} className='btn btn-danger  mx-2'>Manage Items</Link>
+                    <Link to={'/add-item'} className='btn btn-danger'>Add Item</Link>
+                </div>
                 <div className="row text-white">
                     <div className="col-12">
                         <Table striped bordered hover responsive variant="dark">
