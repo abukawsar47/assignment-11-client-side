@@ -1,4 +1,4 @@
-# (./images/logo-light.png) Car Dealer
+# Car Dealer
 
 Car Dealer is the most enticing, creative, modern and versatile auto dealer premium REACT template suitable for any car dealer website, business or corporate websites.
 
