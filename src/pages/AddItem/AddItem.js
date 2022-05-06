@@ -13,9 +13,6 @@ const AddItem = () => {
     const email = user.email
 
     const onSubmit = data => {
-        if (!data.success) {
-
-        }
         const url = `https://enigmatic-sea-44652.herokuapp.com/car`;
         fetch(url, {
             method: 'POST',
