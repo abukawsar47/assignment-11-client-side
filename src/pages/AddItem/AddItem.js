@@ -12,7 +12,7 @@ const AddItem = () => {
     const userName = user.displayName;
     const email = user.email
 
-    const onSubmit = data => {
+    const onSubmit = (data, e) => {
         const url = `https://enigmatic-sea-44652.herokuapp.com/car`;
         fetch(url, {
             method: 'POST',
@@ -23,6 +23,7 @@ const AddItem = () => {
         })
             .then(res => res.json())
             .then(result => {
+                e.target.reset(result);
             })
     };
 

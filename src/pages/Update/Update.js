@@ -17,8 +17,9 @@ const Update = () => {
                 <h1 className='text-danger text-center'>Car Inventory</h1>
                 <span className='text-center mb-4'>Check out our recent cars</span>
                 <div className='mb-4 text-center' >
-                    <Link to={'/manage-items'} className='btn btn-danger me-2'>Manage Items</Link>
-                    <Link to={'/add-item'} className='btn btn-danger '>Add Item</Link>
+                    <Link to={'/manage-items'} className='btn btn-danger'>Manage Items</Link>
+                    <Link to={'/add-item'} className='btn btn-danger mx-2'>Add Item</Link>
+                    <Link to={'/myItems'} className='btn btn-danger'>My Items</Link>
                 </div>
                 <div className="cars-container">
                     {
