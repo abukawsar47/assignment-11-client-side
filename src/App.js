@@ -22,10 +22,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path='/car/:carId' element={<CarInventory></CarInventory>}></Route>
-        <Route path='/update' element={
+        <Route path='/car/:carId' element={
           <PrivateRoute>
-            <Update></Update>
+            <CarInventory></CarInventory>
           </PrivateRoute>
         }></Route>
         <Route path='/add-item' element={
@@ -44,6 +43,7 @@ function App() {
           </PrivateRoute>
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/all-items' element={<Update></Update>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

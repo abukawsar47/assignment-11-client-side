@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -19,7 +17,7 @@ const CarInventory = () => {
         if (quantity > 0) {
             quantity = quantity - 1;
             const updateCar = { name, _id, description, price, img, quantity, supplier };
-            setCar(updateCar);
+            // setCar(updateCar);
             const url = `https://enigmatic-sea-44652.herokuapp.com/car/${_id}`;
             fetch(url, {
                 method: 'PUT',

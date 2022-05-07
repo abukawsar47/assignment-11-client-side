@@ -14,7 +14,7 @@ const Update = () => {
     return (
         <div id="cars" className='container my-5'>
             <div className="row">
-                <h1 className='text-danger text-center'>Car Inventory</h1>
+                <h1 className='text-danger text-center'>All Items</h1>
                 <span className='text-center mb-4'>Check out our recent cars</span>
                 <div className='mb-4 text-center' >
                     <Link to={'/manage-items'} className='btn btn-danger'>Manage Items</Link>
