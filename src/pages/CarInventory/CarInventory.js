@@ -14,10 +14,10 @@ const CarInventory = () => {
 
     const handleCarDeliveredQuantity = () => {
         let { name, _id, description, price, img, quantity, supplier } = car;
-        if (quantity > 0) {
+        if (quantity !== 0) {
             quantity = quantity - 1;
             const updateCar = { name, _id, description, price, img, quantity, supplier };
-            // setCar(updateCar);
+
             const url = `https://enigmatic-sea-44652.herokuapp.com/car/${_id}`;
             fetch(url, {
                 method: 'PUT',
@@ -35,6 +35,8 @@ const CarInventory = () => {
                 .then(res => res.json())
                 .then(data => {
                     setCar(data)
+                    setCar(updateCar);
+
                 })
         }
         else {
@@ -54,6 +56,9 @@ const CarInventory = () => {
             quantity = parseInt(quantity) + parseInt(newUpdateQuantity);
 
             const updateCar = { name, _id, description, price, img, quantity, supplier };
+            setCar(updateCar);
+
+
             const url = `https://enigmatic-sea-44652.herokuapp.com/car/${_id}`;
             fetch(url, {
                 method: 'PUT',
@@ -69,10 +74,8 @@ const CarInventory = () => {
 
             fetch(url)
                 .then(res => res.json())
-                .then(data => {
-                    setCar(data)
-                    event.target.reset()
-                })
+                .then(data => console.log(data));
+            event.target.reset();
         }
     }
 
